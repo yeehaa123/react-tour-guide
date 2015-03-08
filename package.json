@@ -26,6 +26,20 @@
     "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-react": "^3.0.0",
+    "jest-cli": "^0.4.0",
+    "react-tools": "^0.12.2",
     "run-sequence": "^1.0.2"
+  },
+  "jest": {
+    "rootDir": ".",
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "testPathDirs": ["<rootDir>"],
+    "testDirectoryName": "__tests__",
+    "testFileExtensions": ["js"],
+    "moduleFileExtensions": ["js", "json"],
+    "unmockedModulePathPatterns": ["<rootDir>/node_modules/react"]
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
