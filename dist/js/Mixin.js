@@ -1,6 +1,3 @@
-/**
- * @jsx React.DOM
- */
 'use strict';
 
 var React     = require('react/addons');
@@ -88,16 +85,23 @@ module.exports = function(settings, done) {
       var winWidth = parseInt($(window).width());
       var docHeight = parseInt($(document).height());
 
+      void 0;
+      void 0;
+
       if ( axis.toLowerCase() === 'x' ) {
         if ( value + elWidth > winWidth ) {
+          void 0;
           value = winWidth - elWidth;
         } else if ( value < 0 ) {
+          void 0;
           value = 0;
         }
       } else if ( axis.toLowerCase() === 'y' ) {
         if ( value + elHeight > docHeight ) {
+          void 0;
           value = docHeight - elHeight;
         } else if ( value < 0 ) {
+          void 0;
           value = 0;
         }
       }
@@ -144,7 +148,7 @@ module.exports = function(settings, done) {
 
       this.setState({
         xPos: this.preventWindowOverflow(placement.x, 'x', elWidth, elHeight),
-        yPos: this.preventWindowOverflow(placement.y, 'x', elWidth, elHeight)
+        yPos: this.preventWindowOverflow(placement.y, 'y', elWidth, elHeight)
       });
     },
 
@@ -171,6 +175,8 @@ module.exports = function(settings, done) {
           'scrollTop': $nextIndicator.offset().top - $(window).height()/2
         }, 500);
       }
+
+      void 0;
     },
 
     renderCurrentStep: function() {

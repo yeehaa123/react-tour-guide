@@ -1,6 +1,6 @@
 {
   "name": "react-tour-guide",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "author": "Jake Marsh <jakemmarsh@gmail.com>",
   "description": "A ReactJS mixin to give new users a popup-based tour of your application.",
   "repository": {
@@ -26,6 +26,7 @@
     "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-react": "^3.0.0",
+    "gulp-strip-debug": "^1.0.2",
     "jest-cli": "^0.4.0",
     "react-tools": "^0.12.2",
     "run-sequence": "^1.0.2"
@@ -40,6 +41,7 @@
     "unmockedModulePathPatterns": ["<rootDir>/node_modules/react"]
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "gulp build"
   }
 }
