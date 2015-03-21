@@ -113,3 +113,14 @@ The guided tour consists of two main elements for each step: an `indicator` and 
   </div>
 </div>
 ```
+
+---
+
+### Testing
+
+All tests for this package are within the `__tests__/` directory. If you wish to run the tests:
+
+1. `git clone git@github.com:jakemmarsh/react-tour-guide.git`
+2. `cd react-tour-guide`
+3. `npm install`
+4. `npm test`
