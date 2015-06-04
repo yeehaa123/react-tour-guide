@@ -1,8 +1,8 @@
 {
-  "name": "react-tour-guide",
-  "version": "0.0.7",
-  "author": "Jake Marsh <jakemmarsh@gmail.com>",
-  "description": "A ReactJS mixin to give new users a popup-based tour of your application.",
+  "name": "react-intro-tour",
+  "version": "0.0.1",
+  "author": "yeehaa@codingthehumanities.com",
+  "description": "A ReactJS mixin to give new users a popup-based tour of your application. Cloned from Jake Marsh's version",
   "repository": {
     "type": "git",
     "url": "https://github.com/jakemmarsh/react-tour-guide.git"
@@ -32,6 +32,6 @@
     "run-sequence": "^1.0.2"
   },
   "scripts": {
-    "prepublish": "gulp build"
+    "prepublish": "gulp prod"
   }
 }
